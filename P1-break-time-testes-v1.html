@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="DreamPie Format" content="1">
+<title>DreamPie History</title>
+<style>
+body {
+  white-space: pre-wrap;
+  font-family: Monospace;
+  font-size: 10240;
+  color: #ffffff;
+  background-color: #000000;
+}
+span.folded {
+ display: none;
+}
+span.commandsep {
+ display: none;
+}
+span.command-defs {
+}
+span.command {
+}
+span.output {
+}
+span.fold-message {
+  color: #a7a7a7;
+  background-color: #003b6c;
+}
+span.message {
+  color: #ffff00;
+}
+span.prompt {
+  color: #e400b6;
+}
+span.exception {
+  color: #ff8080;
+}
+span.result-ind {
+  color: #0000ff;
+}
+span.result {
+  color: #bcffff;
+}
+span.stderr {
+  color: #ff8080;
+}
+span.stdout {
+  color: #bcffff;
+}
+span.stdin {
+}
+span.error {
+  background-color: #ff0000;
+}
+span.bracket-3 {
+  color: #ffabab;
+}
+span.bracket-2 {
+  color: #dfabff;
+}
+span.bracket-1 {
+  color: #abffab;
+}
+span.bracket-match {
+  background-color: #00008b;
+}
+span.comment {
+  color: #c9a3a0;
+}
+span.number {
+  color: #aeacff;
+}
+span.string {
+  color: #00e400;
+}
+span.builtin {
+  color: #efcfcf;
+}
+span.keyword {
+  color: #ff7700;
+}
+</style>
+</head>
+<body><span class="message">Python 2.7.12 (default, Nov 19 2016, 06:48:10) 
+[GCC 5.4.0 20160609] on linux2
+Type "copyright", "credits" or "license()" for more information.
+DreamPie 1.2.1
+</span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">print</span>(<span class="string">'historico do teste'</span>)
+</span><span class="commandsep"></span><span class="output"><span class="stdout">historico do teste
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span>qtd_min_trab = <span class="builtin">input</span>(<span class="string">'Digite qtos min de trabalho: '</span>)
+<span class="prompt">... </span><span class="keyword">print</span>(<span class="string">'Vc digitou: '</span>), qtd_min_trab
+</span><span class="commandsep"></span><span class="output"><span class="stdout">Digite qtos min de trabalho: </span></span><span class="command"><span class="output"><span class="stdin">33
+</span></span></span><span class="commandsep"></span><span class="output"><span class="stdout">Vc digitou:  33
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span>qtd_min_trab = <span class="builtin">input</span>(<span class="string">'digite os minutos: '</span>)
+<span class="prompt">... </span><span class="keyword">print</span>(time.ctime())
+<span class="prompt">... </span>time.sleep(<span class="number">30</span>)
+<span class="prompt">... </span><span class="keyword">print</span>(<span class="string">'vc digitou: '</span>), qtd_min_trab
+</span><span class="commandsep"></span><span class="output"><span class="stdout">digite os minutos: </span></span><span class="command"><span class="output"><span class="stdin">44
+</span></span></span><span class="commandsep"></span><span class="output"><span class="exception">Traceback (most recent call last):
+  File "&lt;pyshell#2&gt;", line 2, in &lt;module&gt;
+    print(time.ctime())
+NameError: name 'time' is not defined
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span>qtd_min_trab = <span class="builtin">input</span>(<span class="string">'digite o nro: '</span>)
+<span class="prompt">... </span><span class="keyword">print</span> time.ctime()
+<span class="prompt">... </span>time.sleep(<span class="number">30</span>)
+<span class="prompt">... </span><span class="keyword">print</span>(<span class="string">'vc digitou: '</span>), qtd_min_trab
+</span><span class="commandsep"></span><span class="output"><span class="stdout">digite o nro: </span></span><span class="command"><span class="output"><span class="stdin">44
+</span></span></span><span class="commandsep"></span><span class="output"><span class="exception">Traceback (most recent call last):
+  File "&lt;pyshell#3&gt;", line 2, in &lt;module&gt;
+    print time.ctime()
+NameError: name 'time' is not defined
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> time
+<span class="prompt">... </span><span class="keyword">print</span> time.ctime()
+<span class="prompt">... </span>qtd_min_trab = <span class="builtin">input</span>(<span class="string">'digite o nro: '</span>)
+<span class="prompt">... </span>time.sleep(<span class="number">30</span>)
+<span class="prompt">... </span><span class="keyword">print</span> time.ctime()
+</span><span class="commandsep"></span><span class="output"><span class="stdout">Sun Jun 18 13:52:24 2017
+digite o nro: </span></span><span class="command"><span class="output"><span class="stdin">33
+</span></span></span><span class="commandsep"></span><span class="output"><span class="stdout">Sun Jun 18 13:53:13 2017
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> time
+<span class="prompt">... </span><span class="keyword">print</span> time.ctime()
+<span class="prompt">... </span>qtd_min_trab = <span class="builtin">input</span>(<span class="string">'digite um nunero: '</span>)
+<span class="prompt">... </span>time.sleep(<span class="number">15</span>)
+<span class="prompt">... </span><span class="keyword">print</span>(<span class="string">'vc digitou: '</span>), qtd_min_trab
+<span class="prompt">... </span><span class="keyword">print</span> time.ctime()
+</span><span class="commandsep"></span><span class="output"><span class="stdout">Sun Jun 18 13:54:54 2017
+digite um nunero: </span></span><span class="command"><span class="output"><span class="stdin">44
+</span></span></span><span class="commandsep"></span><span class="output"><span class="stdout">vc digitou:  44
+Sun Jun 18 13:55:11 2017
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span>ctypes.windll.user32.MessageBoxW(<span class="builtin">None</span>, <span class="string">'teste messageBox'</span>, <span class="string">'Mensagem aqui'</span>, <span class="number">0</span>)
+</span><span class="commandsep"></span><span class="output"><span class="exception">Traceback (most recent call last):
+  File "&lt;pyshell#6&gt;", line 1, in &lt;module&gt;
+    ctypes.windll.user32.MessageBoxW(None, 'teste messageBox', 'Mensagem aqui', 0)
+NameError: name 'ctypes' is not defined
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> ctypes
+<span class="prompt">... </span>ctypes.windll.user32.MessageBoxW(<span class="builtin">None</span>, <span class="string">'teste message box'</span>, <span class="string">'teste mensagem'</span>, <span class="number">0</span>)
+</span><span class="commandsep"></span><span class="output"><span class="exception">Traceback (most recent call last):
+  File "&lt;pyshell#7&gt;", line 2, in &lt;module&gt;
+    ctypes.windll.user32.MessageBoxW(None, 'teste message box', 'teste mensagem', 0)
+AttributeError: 'module' object has no attribute 'windll'
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> ctypes
+<span class="prompt">... </span>ctypes.windll.user32.MessageBoxW(<span class="number">0</span>, <span class="string">"Título"</span>, <span class="string">"mensagem"</span>, <span class="number">1</span>)
+</span><span class="commandsep"></span><span class="output"><span class="exception">Traceback (most recent call last):
+  File "&lt;pyshell#8&gt;", line 2, in &lt;module&gt;
+    ctypes.windll.user32.MessageBoxW(0, "Título", "mensagem", 1)
+AttributeError: 'module' object has no attribute 'windll'
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> tkMessageBox
+<span class="prompt">... </span>tk.MessageBox.showinfo(title=<span class="string">"Título"</span>, message=<span class="string">"Mensagem"</span>)
+</span><span class="commandsep"></span><span class="output"><span class="exception">Traceback (most recent call last):
+  File "&lt;pyshell#9&gt;", line 2, in &lt;module&gt;
+    tk.MessageBox.showinfo(title="Título", message="Mensagem")
+NameError: name 'tk' is not defined
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> easygui
+<span class="prompt">... </span>easygui.msgbox(<span class="string">"Mensagem"</span>, title=<span class="string">"Título"</span>)
+</span><span class="commandsep"></span><span class="output"><span class="exception">Traceback (most recent call last):
+  File "&lt;pyshell#10&gt;", line 1, in &lt;module&gt;
+    import easygui
+ImportError: No module named easygui
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> tkMessageBox
+<span class="prompt">... </span>tkMessageBox.showinfo(title=<span class="string">"Título"</span>, message=<span class="string">"Mensagem"</span>)
+</span><span class="commandsep"></span><span class="output"><span class="exception">Traceback (most recent call last):
+  File "&lt;pyshell#11&gt;", line 2, in &lt;module&gt;
+    tkMessageBox.showinfo(title="Título", message="Mensagem")
+  File "/usr/lib/python2.7/lib-tk/tkMessageBox.py", line 83, in showinfo
+    return _show(title, message, INFO, OK, **options)
+  File "/usr/lib/python2.7/lib-tk/tkMessageBox.py", line 72, in _show
+    res = Message(**options).show()
+  File "/usr/lib/python2.7/lib-tk/tkCommonDialog.py", line 48, in show
+    s = w.tk.call(self.command, *w._options(self.options))
+TclError: can't invoke "grab" command: application has been destroyed
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> tkMessageBox
+<span class="prompt">... </span>tkMessageBox.showinfo(title=<span class="string">"Título"</span>, message=<span class="string">"Mensagem"</span>)
+</span><span class="commandsep"></span><span class="output"><span class="result-ind">0: </span><span class="result">'ok'
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> tkMessageBox
+<span class="prompt">... </span>tkMessageBox(title=<span class="string">"Título"</span>, message=<span class="string">"Mensagem"</span>)
+</span><span class="commandsep"></span><span class="output"><span class="exception">Traceback (most recent call last):
+  File "&lt;pyshell#13&gt;", line 2, in &lt;module&gt;
+    tkMessageBox(title="Título", message="Mensagem")
+TypeError: 'module' object is not callable
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> tkMessageBox
+<span class="prompt">... </span>tkMessageBox.showinfo(title=<span class="string">"Título"</span>, message=<span class="string">"Mensagem"</span>)
+</span><span class="commandsep"></span><span class="output"><span class="exception">Traceback (most recent call last):
+  File "&lt;pyshell#14&gt;", line 2, in &lt;module&gt;
+    tkMessageBox.showinfo(title="Título", message="Mensagem")
+  File "/usr/lib/python2.7/lib-tk/tkMessageBox.py", line 83, in showinfo
+    return _show(title, message, INFO, OK, **options)
+  File "/usr/lib/python2.7/lib-tk/tkMessageBox.py", line 72, in _show
+    res = Message(**options).show()
+  File "/usr/lib/python2.7/lib-tk/tkCommonDialog.py", line 48, in show
+    s = w.tk.call(self.command, *w._options(self.options))
+TclError: can't invoke "grab" command: application has been destroyed
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> tkMessageBox
+<span class="prompt">... </span>tkMessageBox.showinfo(title=<span class="string">"Título"</span>, message=<span class="string">"Mensagem"</span>)
+</span><span class="commandsep"></span><span class="output"><span class="result-ind">1: </span><span class="result">'ok'
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> pymsgbox
+<span class="prompt">... </span>pymsgbox.alert(<span class="string">'Mensagem'</span>, <span class="string">'Título'</span>)
+</span><span class="commandsep"></span><span class="output"><span class="exception">Traceback (most recent call last):
+  File "&lt;pyshell#16&gt;", line 1, in &lt;module&gt;
+    import pymsgbox
+ImportError: No module named pymsgbox
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> easygui
+<span class="prompt">... </span>easygui.msgbox(<span class="string">"Mensagem"</span>, title=<span class="string">"Título"</span>)
+</span><span class="commandsep"></span><span class="output"><span class="result-ind">2: </span><span class="result">'OK'
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> pymsgbox
+<span class="prompt">... </span>pymsgbox.alert(<span class="string">'Mensagem'</span>, <span class="string">'Título'</span>)
+</span><span class="commandsep"></span><span class="output"><span class="result-ind">3: </span><span class="result">'OK'
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> pymsgbox
+<span class="prompt">... </span>pymsgbox.alert(<span class="string">'Mensagem'</span>, <span class="string">'Título'</span>)
+<span class="prompt">... </span>response = pymsgbox.prompt(<span class="string">'Qual é o seu nome?'</span>)
+</span><span class="commandsep"></span><span class="output"><span class="result-ind">4: </span><span class="result">'OK'
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> webbrowser
+<span class="prompt">... </span>webbrowser.<span class="builtin">open</span>(<span class="string">"https://www.youtube.com/watch?v=DLHAiojuUq0"</span>)
+</span><span class="commandsep"></span><span class="output"><span class="result-ind">5: </span><span class="result">True
+</span><span class="stderr">[7305:7340:0618/150342.860399:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+</span><span class="stdout">Foi criada uma nova janela em uma sessão existente do navegador.
+</span></span><span class="command"><span class="prompt">&gt;&gt;&gt; </span></span></body>
+</html>
